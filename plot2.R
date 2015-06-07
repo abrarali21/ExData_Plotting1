@@ -9,7 +9,7 @@ tableDat <- read.table("exdata_data_household_power_consumption/household_power_
 # Filter out only the data from Feb 1, 2007 - Feb 2, 2007
 filterDat <- filter(tableDat, Date == "1/2/2007" | Date == "2/2/2007")
 
-# Set png as the graphics device with the file name and aspect ratio in pixels
+# Set png as the graphics device, specify the file name and the aspect ratio in pixels
 png(file="plot2.png",width=480,height=480)
 
 # Combine date and time variables into one data/time object
